@@ -1,5 +1,8 @@
+import 'package:daily_tak_project/ui/account_page.dart';
+import 'package:daily_tak_project/ui/add_page.dart';
 import 'package:daily_tak_project/ui/chat_page.dart';
 import 'package:daily_tak_project/ui/home_page.dart';
+import 'package:daily_tak_project/ui/notification_oage.dart';
 import 'package:flutter/material.dart';
 
 class BottomBarPage extends StatefulWidget {
@@ -10,7 +13,7 @@ class BottomBarPage extends StatefulWidget {
 }
 class _BottomBarPageState extends State<BottomBarPage> {
   late int _currentIndex = 0;
-  var pages = const [HomePage(), ChatPage(), ChatPage(), ChatPage() ];
+  var pages = const [HomePage(), ChatPage(), AccountPage(), NotificationPage(),AddPage() ];
 
   @override
   Widget build(BuildContext context) {
@@ -51,9 +54,9 @@ class _BottomBarPageState extends State<BottomBarPage> {
             label: 'Notification',
           ),
         ],
-        onTap: (Index){
+        onTap: (index){
           setState(() {
-            _currentIndex = Index;
+            _currentIndex = index;
           });
         },
       ),
