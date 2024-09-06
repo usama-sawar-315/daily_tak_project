@@ -1,3 +1,4 @@
+import 'package:daily_tak_project/ui/profile_page.dart';
 import 'package:daily_tak_project/ui/real_web_page.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
@@ -19,9 +20,28 @@ class HomePage extends StatelessWidget {
               'Welcome Back',
               style: TextStyle(fontSize: 15,color:Theme.of(context).primaryColor),
             ),
-            const Text(
-              'Usama Sarwar',
-              style: TextStyle(fontSize: 24,color: Colors.white),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Usama Sarwar',
+                  style: TextStyle(fontSize: 24,color: Colors.white),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).push(
+                           MaterialPageRoute(builder: (context) =>  ProfilePage()),
+                    );
+                  },
+                  child: Hero(
+                    tag: 'usama',
+                    child: Image.asset(
+                      width: 40,
+                      'assets/images/tasks.png',
+                    ),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 20),
             Row(
@@ -134,7 +154,7 @@ class HomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        'Finance Mobil App Design',
+                        'Finance Mobile App Design',
                         style: TextStyle(fontSize: 22,color: Theme.of(context).dividerColor),
                       ),
                       const SizedBox(height: 5),
@@ -193,7 +213,7 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Mobil App FramWork',
+                    'Mobile App FrameWork',
                     style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Theme.of(context).dividerColor),
                   ),
                   const SizedBox(height: 5),

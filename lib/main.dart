@@ -1,6 +1,8 @@
 import 'package:daily_tak_project/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'ui/bottom_bar_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
