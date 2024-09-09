@@ -19,73 +19,73 @@ class GroupIbPage extends StatelessWidget {
                     height: 50,
                     decoration: BoxDecoration(
                       color: Theme.of(context).primaryColor,
-                      borderRadius: BorderRadius.all(Radius.circular(30))
+                      borderRadius: const BorderRadius.all(Radius.circular(30))
                     ),
-                    child: Icon(Icons.account_box)
+                    child: const Icon(Icons.account_box)
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Text(
                   'Create a group',
                   style: TextStyle(fontSize: 16,color: Theme.of(context).dividerColor),
                 ),
               ],
             ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
                         'assets/images/tasks.png',
                         width: 50,
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Text(
                         'App Developers',
                         style: TextStyle(fontSize: 16,color: Theme.of(context).dividerColor),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
-                        'assets/images/tasks.png',
+                        'assets/images/boys.png',
                         width: 50,
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Text(
                         'Front_End',
                         style: TextStyle(fontSize: 16,color: Theme.of(context).dividerColor),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
                         'assets/images/tasks.png',
                         width: 50,
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Text(
                         'Back_End',
                         style: TextStyle(fontSize: 16,color: Theme.of(context).dividerColor),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Image.asset(
-                        'assets/images/tasks.png',
+                        'assets/images/boys.png',
                         width: 50,
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Text(
                         'Testing',
                         style: TextStyle(fontSize: 16,color: Theme.of(context).dividerColor),
                       ),
                     ],
-                  )
+                  ),
           ],
         ),
       ),

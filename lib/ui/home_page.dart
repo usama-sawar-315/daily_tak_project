@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
                     tag: 'usama',
                     child: Image.asset(
                       width: 40,
-                      'assets/images/tasks.png',
+                      'assets/images/boys.png',
                     ),
                   ),
                 ),
@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
                   },
                   child: Container(
                     padding: const EdgeInsets.all(5),
-                    height: 170,
+                    height: 190,
                     width: 150,
                     decoration:  BoxDecoration(
                       color: Theme.of(context).primaryColor,
@@ -115,6 +115,26 @@ class HomePage extends StatelessWidget {
                         const Text(
                           'Team Member',
                           style: TextStyle(fontSize: 13,color: Colors.black),
+                        ),
+                        Row(
+                          children: [
+                            Image.asset(
+                              width: 20,
+                              height: 20,
+                              'assets/images/boys.png',
+                            ),
+                            Image.asset(
+                              width: 20,
+                              height: 20,
+                              'assets/images/boys.png',
+                            ),
+                            Image.asset(
+                              width: 20,
+                              height: 20,
+                              'assets/images/boys.png',
+                            ),
+                          ],
+
                         ),
                         const SizedBox(height: 5),
                         const Row(
@@ -144,7 +164,7 @@ class HomePage extends StatelessWidget {
                 const SizedBox(width: 10),
                 Container(
                   padding: const EdgeInsets.all(5),
-                  height: 170,
+                  height: 190,
                   width: 150,
                   decoration:  BoxDecoration(
                     color: Theme.of(context).primaryColorLight,
@@ -161,6 +181,26 @@ class HomePage extends StatelessWidget {
                       Text(
                         'Team Member',
                         style: TextStyle(fontSize: 13,color: Theme.of(context).dividerColor),
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            width: 20,
+                            height: 20,
+                            'assets/images/boys.png',
+                          ),
+                          Image.asset(
+                            width: 20,
+                            height: 20,
+                            'assets/images/boys.png',
+                          ),
+                          Image.asset(
+                            width: 20,
+                            height: 20,
+                            'assets/images/boys.png',
+                          ),
+                        ],
+
                       ),
                       const SizedBox(height: 5),
                       Row(
@@ -223,6 +263,26 @@ class HomePage extends StatelessWidget {
                   ),
                   const SizedBox(height: 5),
                   Row(
+                    children: [
+                      Image.asset(
+                        width: 20,
+                        height: 20,
+                        'assets/images/boys.png',
+                      ),
+                      Image.asset(
+                        width: 20,
+                        height: 20,
+                        'assets/images/boys.png',
+                      ),
+                      Image.asset(
+                        width: 20,
+                        height: 20,
+                        'assets/images/boys.png',
+                      ),
+                    ],
+
+                  ),
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment:CrossAxisAlignment.end,
                     children: [
@@ -261,6 +321,26 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(fontSize: 15,color: Theme.of(context).dividerColor),
                   ),
                   const SizedBox(height: 5),
+                  Row(
+                    children: [
+                      Image.asset(
+                        width: 20,
+                        height: 20,
+                        'assets/images/boys.png',
+                      ),
+                      Image.asset(
+                        width: 20,
+                        height: 20,
+                        'assets/images/boys.png',
+                      ),
+                      Image.asset(
+                        width: 20,
+                        height: 20,
+                        'assets/images/boys.png',
+                      ),
+                    ],
+
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.end,

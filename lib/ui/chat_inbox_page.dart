@@ -17,7 +17,7 @@ class ChatInboxPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
-                    'assets/images/tasks.png',
+                    'assets/images/boys.png',
                   width: 40,
                 ),
                 const SizedBox(width: 3),
@@ -67,7 +67,7 @@ class ChatInboxPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
-                  'assets/images/tasks.png',
+                  'assets/images/boys.png',
                   width: 40,
                 ),
                 const SizedBox(width: 3),
@@ -117,7 +117,7 @@ class ChatInboxPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
-                  'assets/images/tasks.png',
+                  'assets/images/boys.png',
                   width: 40,
                 ),
                 const SizedBox(width: 3),

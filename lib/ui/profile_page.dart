@@ -27,9 +27,11 @@ class ProfilePage extends StatelessWidget {
             children: [
                  Hero(
                    tag: 'usama',
-                   child: Image.asset(
-                     width: 100,
-                'assets/images/tasks.png',
+                   child: CircleAvatar(
+                     radius:50 ,
+                     child: Image.asset(
+                'assets/images/boys.png',
+                     ),
                    ),
                  ),
               const SizedBox(height: 20),
