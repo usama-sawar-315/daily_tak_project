@@ -1,3 +1,4 @@
+import 'package:daily_tak_project/ui/message_page.dart';
 import 'package:daily_tak_project/utils/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -16,9 +17,13 @@ class ChatInboxPage extends StatelessWidget {
                crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
+                CircleAvatar(
+                  radius: 21,
+                  backgroundColor: Colors.white,
+                  child: Image.asset(
+                    width: 30,
                     'assets/images/boys.png',
-                  width: 40,
+                  ),
                 ),
                 const SizedBox(width: 3),
                 Column(
@@ -66,9 +71,13 @@ class ChatInboxPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  'assets/images/boys.png',
-                  width: 40,
+                CircleAvatar(
+                  radius: 21,
+                  backgroundColor: Colors.white,
+                  child: Image.asset(
+                    width: 30,
+                    'assets/images/boys.png',
+                  ),
                 ),
                 const SizedBox(width: 3),
                 Column(
@@ -116,9 +125,13 @@ class ChatInboxPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  'assets/images/boys.png',
-                  width: 40,
+                CircleAvatar(
+                  radius: 21,
+                  backgroundColor: Colors.white,
+                  child: Image.asset(
+                    width: 30,
+                    'assets/images/boys.png',
+                  ),
                 ),
                 const SizedBox(width: 3),
                 Column(
@@ -141,9 +154,9 @@ class ChatInboxPage extends StatelessWidget {
               alignment: Alignment.bottomRight,
               child: MaterialButton(
                 onPressed: () {
-                  // Navigator.of(context).pushReplacement(
-                  //     MaterialPageRoute(builder: (context) => const LoginPage()));
-                  // // }
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => MessagePage()));
+
                 },
                 color: Theme.of(context).primaryColor,
                 child:  Text(

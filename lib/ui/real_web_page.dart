@@ -10,6 +10,7 @@ class RealWebPage extends StatelessWidget {
     return Scaffold(
       backgroundColor:  const Color(0xFF212832),
       appBar: AppBar(
+        leading: Icon(Icons.arrow_back,color: Colors.white),
         backgroundColor:  const Color(0xFF212832),
         title: Center(
           child: Text('To Details',

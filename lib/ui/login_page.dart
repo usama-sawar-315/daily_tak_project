@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
     return  Scaffold(
       backgroundColor:  const Color(0xFF212832),
       body: Padding(
-        padding: const EdgeInsetsDirectional.all(16.0),
+        padding: const EdgeInsets.symmetric(vertical: 22,horizontal: 16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -59,13 +59,13 @@ class LoginPage extends StatelessWidget {
               minWidth: double.infinity,
               onPressed: () {
                 Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) =>  BottomBarPage()));
+                    MaterialPageRoute(builder: (context) =>  const BottomBarPage()));
                 // }
               },
               color: Theme.of(context).primaryColor,
               child: const Text('Login',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black)),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               children: [
                 Expanded(
@@ -88,7 +88,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
               height: 50,
               decoration: BoxDecoration(

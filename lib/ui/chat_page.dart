@@ -62,7 +62,7 @@ class _ChatPageState extends State<ChatPage> with SingleTickerProviderStateMixin
                     indicatorWeight: 0,
                     dividerColor: Colors.transparent,
                     indicator: BoxDecoration(
-                        border: Border.all(width: 1.0, color: Colors.transparent)),
+                        border: Border.all( color: Colors.transparent)),
                     tabs: [
                       Tab(
                         child: Container(

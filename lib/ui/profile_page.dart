@@ -12,6 +12,7 @@ class ProfilePage extends StatelessWidget {
       backgroundColor: const Color(0xFF212832),
       appBar: AppBar(
         backgroundColor:  const Color(0xFF212832),
+        leading: Icon(Icons.arrow_back,color: Colors.white),
         title: Center(
           child: Text(
             'Profile',
@@ -29,7 +30,9 @@ class ProfilePage extends StatelessWidget {
                    tag: 'usama',
                    child: CircleAvatar(
                      radius:50 ,
+                     backgroundColor: Colors.white,
                      child: Image.asset(
+                       width: 70,
                 'assets/images/boys.png',
                      ),
                    ),

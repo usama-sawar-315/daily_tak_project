@@ -32,9 +32,13 @@ class NotificationPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  'assets/images/boys.png',
-                  width: 40,
+                CircleAvatar(
+                  radius: 21,
+                  backgroundColor: Colors.white,
+                  child: Image.asset(
+                    width: 30,
+                    'assets/images/boys.png',
+                  ),
                 ),
                 const SizedBox(width: 3),
                 Column(
@@ -82,9 +86,13 @@ class NotificationPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  'assets/images/boys.png',
-                  width: 40,
+                CircleAvatar(
+                  radius: 21,
+                  backgroundColor: Colors.white,
+                  child: Image.asset(
+                    width: 30,
+                    'assets/images/boys.png',
+                  ),
                 ),
                 const SizedBox(width: 3),
                 Column(
@@ -137,9 +145,13 @@ class NotificationPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  'assets/images/boys.png',
-                  width: 40,
+                CircleAvatar(
+                  radius: 21,
+                  backgroundColor: Colors.white,
+                  child: Image.asset(
+                    width: 30,
+                    'assets/images/boys.png',
+                  ),
                 ),
                 const SizedBox(width: 3),
                 Column(

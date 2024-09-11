@@ -47,9 +47,13 @@ class GroupIbPage extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: [
-                      Image.asset(
-                        'assets/images/boys.png',
-                        width: 50,
+                      CircleAvatar(
+                        radius: 28,
+                        backgroundColor: Colors.white,
+                        child: Image.asset(
+                          width: 40,
+                          'assets/images/boys.png',
+                        ),
                       ),
                       const SizedBox(width: 10),
                       Text(
@@ -75,9 +79,13 @@ class GroupIbPage extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: [
-                      Image.asset(
-                        'assets/images/boys.png',
-                        width: 50,
+                      CircleAvatar(
+                        radius: 28,
+                        backgroundColor: Colors.white,
+                        child: Image.asset(
+                          width: 40,
+                          'assets/images/boys.png',
+                        ),
                       ),
                       const SizedBox(width: 10),
                       Text(

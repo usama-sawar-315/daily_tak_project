@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding:const EdgeInsets.all(16.0),
+        padding:const EdgeInsets.symmetric(vertical: 22,horizontal: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -30,14 +30,18 @@ class HomePage extends StatelessWidget {
                 GestureDetector(
                   onTap: (){
                     Navigator.of(context).push(
-                           MaterialPageRoute(builder: (context) =>  ProfilePage()),
+                           MaterialPageRoute(builder: (context) =>  const ProfilePage()),
                     );
                   },
                   child: Hero(
                     tag: 'usama',
-                    child: Image.asset(
-                      width: 40,
-                      'assets/images/boys.png',
+                    child: CircleAvatar(
+                      radius: 28,
+                      backgroundColor: Colors.white,
+                      child: Image.asset(
+                        width: 40,
+                        'assets/images/boys.png',
+                      ),
                     ),
                   ),
                 ),
@@ -93,7 +97,7 @@ class HomePage extends StatelessWidget {
                 GestureDetector(
                   onTap: (){
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) =>  RealWebPage()),
+                      MaterialPageRoute(builder: (context) =>  const RealWebPage()),
                     );
                   },
                   child: Container(
@@ -116,25 +120,19 @@ class HomePage extends StatelessWidget {
                           'Team Member',
                           style: TextStyle(fontSize: 13,color: Colors.black),
                         ),
-                        Row(
+                        const Stack(
+                          clipBehavior: Clip.none,
                           children: [
-                            Image.asset(
-                              width: 20,
-                              height: 20,
-                              'assets/images/boys.png',
+                            ProfileWidgetCard(color: Colors.white),
+                            Positioned(
+                              left: 10,
+                              child:  ProfileWidgetCard(color: Colors.white),
                             ),
-                            Image.asset(
-                              width: 20,
-                              height: 20,
-                              'assets/images/boys.png',
-                            ),
-                            Image.asset(
-                              width: 20,
-                              height: 20,
-                              'assets/images/boys.png',
+                            Positioned(
+                              left: 10 * 2,
+                              child:  ProfileWidgetCard(color: Colors.white),
                             ),
                           ],
-
                         ),
                         const SizedBox(height: 5),
                         const Row(
@@ -182,25 +180,19 @@ class HomePage extends StatelessWidget {
                         'Team Member',
                         style: TextStyle(fontSize: 13,color: Theme.of(context).dividerColor),
                       ),
-                      Row(
+                      const Stack(
+                        clipBehavior: Clip.none,
                         children: [
-                          Image.asset(
-                            width: 20,
-                            height: 20,
-                            'assets/images/boys.png',
+                          ProfileWidgetCard(color: Colors.white),
+                          Positioned(
+                            left: 10,
+                            child:  ProfileWidgetCard(color: Colors.white),
                           ),
-                          Image.asset(
-                            width: 20,
-                            height: 20,
-                            'assets/images/boys.png',
-                          ),
-                          Image.asset(
-                            width: 20,
-                            height: 20,
-                            'assets/images/boys.png',
+                          Positioned(
+                            left: 10 * 2,
+                            child:  ProfileWidgetCard(color: Colors.white),
                           ),
                         ],
-
                       ),
                       const SizedBox(height: 5),
                       Row(
@@ -262,25 +254,19 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(fontSize: 15,color: Theme.of(context).dividerColor),
                   ),
                   const SizedBox(height: 5),
-                  Row(
+                  const Stack(
+                    clipBehavior: Clip.none,
                     children: [
-                      Image.asset(
-                        width: 20,
-                        height: 20,
-                        'assets/images/boys.png',
+                      ProfileWidgetCard(color: Colors.white),
+                      Positioned(
+                        left: 10,
+                        child:  ProfileWidgetCard(color: Colors.white),
                       ),
-                      Image.asset(
-                        width: 20,
-                        height: 20,
-                        'assets/images/boys.png',
-                      ),
-                      Image.asset(
-                        width: 20,
-                        height: 20,
-                        'assets/images/boys.png',
+                      Positioned(
+                        left: 10 * 2,
+                        child:  ProfileWidgetCard(color: Colors.white),
                       ),
                     ],
-
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -321,25 +307,19 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(fontSize: 15,color: Theme.of(context).dividerColor),
                   ),
                   const SizedBox(height: 5),
-                  Row(
+                  const Stack(
+                    clipBehavior: Clip.none,
                     children: [
-                      Image.asset(
-                        width: 20,
-                        height: 20,
-                        'assets/images/boys.png',
+                      ProfileWidgetCard(color: Colors.white),
+                      Positioned(
+                        left: 10,
+                        child:  ProfileWidgetCard(color: Colors.white),
                       ),
-                      Image.asset(
-                        width: 20,
-                        height: 20,
-                        'assets/images/boys.png',
-                      ),
-                      Image.asset(
-                        width: 20,
-                        height: 20,
-                        'assets/images/boys.png',
+                      Positioned(
+                        left: 10 * 2,
+                        child:  ProfileWidgetCard(color: Colors.white),
                       ),
                     ],
-
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -360,10 +340,41 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
+            const SizedBox(height: 10),
           ],
         ),
       ),
     );
   }
 }
+
+
+class ProfileWidgetCard extends StatelessWidget {
+  final Color color;
+  const ProfileWidgetCard({super.key, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 20,
+      width: 20,
+      decoration: BoxDecoration(
+          image: const DecorationImage(image: AssetImage('assets/images/boys.png')),
+          color: color,
+          border: Border.all(color: Colors.black87),
+          shape: BoxShape.circle,
+          boxShadow: [
+            BoxShadow(
+                color: color.withOpacity(0.5),
+                blurRadius: 0.5,
+                spreadRadius: 0.5,
+                offset: const Offset(0, 1)
+            )
+          ]
+      ),
+    );
+  }
+}
+
+
