@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MessagePage extends StatefulWidget {
@@ -28,7 +27,7 @@ class _MessagePageState extends State<MessagePage> {
     return Scaffold(
       backgroundColor: const Color(0xFF212832),
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back,color: Colors.white),
+        leading: const Icon(Icons.arrow_back,color: Colors.white),
         backgroundColor: const Color(0xFF212832),
         title: Center(child: Text('Messages',style: TextStyle(color: Theme.of(context).dividerColor))),
       ),

@@ -95,11 +95,15 @@ class LoginPage extends StatelessWidget {
                 color: Theme.of(context).primaryColorLight,
               ),
               child:
-              Center(
-                child: Text(
-                  'Google',
-                  style: TextStyle(fontSize: 17,color:Theme.of(context).dividerColor),
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.g_mobiledata_rounded,size: 30,color:Theme.of(context).primaryColor ),
+                  Text(
+                    'Google',
+                    style: TextStyle(fontSize: 17,color:Theme.of(context).dividerColor),
+                  ),
+                ],
               ),
             ),
             const SizedBox(height: 60),

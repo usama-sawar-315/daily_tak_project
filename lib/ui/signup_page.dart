@@ -50,7 +50,7 @@ class signupPage extends StatelessWidget {
                 color: Theme.of(context).primaryColor,
                 child: const Text('Signup',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black)),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 children: [
                   Expanded(
@@ -73,18 +73,22 @@ class signupPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 height: 50,
                 decoration: BoxDecoration(
                   color: Theme.of(context).primaryColorLight,
                 ),
                 child:
-                Center(
-                  child: Text(
-                    'Google',
-                    style: TextStyle(fontSize: 17,color:Theme.of(context).dividerColor),
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.g_mobiledata_rounded,size: 30,color:Theme.of(context).primaryColor ),
+                    Text(
+                      'Google',
+                      style: TextStyle(fontSize: 17,color:Theme.of(context).dividerColor),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(height: 30),
@@ -94,7 +98,7 @@ class signupPage extends StatelessWidget {
                   const Text(
                     'Already have any Account?',style: TextStyle(fontSize: 17,color: Colors.white),
                   ),
-                  SizedBox(width: 5),
+                  const SizedBox(width: 5),
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(
